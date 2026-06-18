@@ -15,6 +15,9 @@ jobs:
 
       - name: Build JOSS PDF
         uses: openjournals/openjournals-draft-action@master
+        with:  
+          journal: joss
+          paper_path: paper/paper.md
 
       - name: Upload PDF
         uses: actions/upload-artifact@v4
